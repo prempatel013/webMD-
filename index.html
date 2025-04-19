@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebMD - Better information. Better health.</title>
+  <meta name="description" content="The leading source for trustworthy and timely health and medical news and information. Providing credible health information, supportive community, and educational services by blending award-winning expertise in content, community services, expert commentary, and medical review." />
+   <link rel="stylesheet" href="src/style.css">
+  <link rel="icon" href="/src/assets/favicon.svg" type="image/svg+xml">
+  <style>
+    /* Dropdown Menu Styles */
+    .main-nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    
+    .main-nav ul li {
+      position: relative;
+      margin-right: 20px;
+    }
+    
+    .main-nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 15px 0;
+      display: block;
+    }
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 250px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1000;
+      left: 0;
+      top: 100%;
+      padding: 15px 0;
+      border-radius: 4px;
+      border-top: 3px solid #0078bf;
+    }
+    
+    .dropdown-menu li {
+      display: block;
+      width: 100%;
+      margin-right: 0 !important;
+    }
+    
+    .dropdown-menu li a {
+      color: #333;
+      padding: 8px 20px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+    }
+    
+    .dropdown-menu li a:hover {
+      background-color: #f5f5f5;
+      color: #0078bf;
+    }
+    
+    .main-nav ul li:hover .dropdown-menu {
+      display: block;
+    }
+    
+    /* Down arrow indicator */
+    .has-dropdown > a::after {
+      content: "▼";
+      font-size: 8px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <!-- Header Section -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="container">
+          <div class="logo">
+            <a href="/">
+              <img src="https://ext.same-assets.com/2496973885/3178816857.svg" alt="WebMD Logo" class="logo-img">
+            </a>
+          </div>
+         
+            <nav class="main-nav">
+              <ul>
+                <li class="dropdown">
+                  <a href="#">Conditions</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Common Conditions</a></li>
+                    <li><a href="#">A-Z List</a></li>
+                    <li><a href="#">Symptom Checker</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Drugs & Supplements</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Drugs A-Z</a></li>
+                    <li><a href="#">Pill Identifier</a></li>
+                    <li><a href="#">Interactions Checker</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Well-Being</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Mental Health</a></li>
+                    <li><a href="#">Skin & Beauty</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Parenting</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Pregnancy</a></li>
+                    <li><a href="#">Teen Health</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Food & Fitness</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Diet & Nutrition</a></li>
+                    <li><a href="#">Exercise</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Health A-Z</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">All Conditions</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </nav>
+          
+            <div class="navbar-right">
+              <button class="modern-btn">Subscribe</button>
+              <a href="#" class="modern-btn">Log In</a>
+              <button class="modern-btn">🔍</button>
+            </div>
+          
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="site-main">
+      <!-- Featured Content -->
+      <section class="featured-content">
+        <div class="container">
+          <div class="feature-main">
+            <div class="feature-image">
+              <img src="https://ext.same-assets.com/2496973885/2145012863.webp" alt="Person checking blood pressure" class="feature-img">
+            </div>
+            <div class="feature-text">
+              <h1>Types Of Headaches And Relief Options</h1>
+              <p>Learn about the different types of headaches, including migraines, tension, and cluster headaches, plus treatments and prevention.</p>
+            </div>
+          </div>
+          <div class="feature-secondary">
+            <div class="secondary-item">
+              <img src="https://ext.same-assets.com/2496973885/2145012863.webp" alt="Blood Pressure" class="item-img">
+              <h3>High Blood Pressure In Elderly Persons</h3>
+            </div>
+            <div class="secondary-item">
+              <img src="https://ext.same-assets.com/2496973885/156849926.webp" alt="Woman holding arm" class="item-img">
+              <h3>How to Identify Different Types of Arthritis</h3>
+            </div>
+            <div class="secondary-item">
+              <img src="https://ext.same-assets.com/2496973885/2240518234.webp" alt="Woman meditating" class="item-img">
+              <h3>How You Can Cut It All Down with Less Stress</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Living Healthy Section -->
+      <section class="living-healthy">
+        <div class="container">
+          <div class="section-header">
+            <h2>LIVING HEALTHY</h2>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="healthy-icons">
+            <div class="icon-item">
+              <img src="https://ext.same-assets.com/2496973885/827812635.webp" alt="Mental Health" class="icon-img">
+              <span>Mental Health</span>
+            </div>
+            <div class="icon-item">
+              <img src="https://ext.same-assets.com/2496973885/1503018126.webp" alt="Diet & Weight Management" class="icon-img">
+              <span>Diet & Weight</span>
+            </div>
+            <div class="icon-item">
+              <img src="https://ext.same-assets.com/4097139332/1503018126.webp" alt="Fitness & Exercise" class="icon-img">
+              <span>Fitness & Exercise</span>
+            </div>
+            <div class="icon-item">
+              <img src="https://ext.same-assets.com/2496973885/3758632596.webp" alt="Sex & Relationships" class="icon-img">
+              <span>Sex & Relationships</span>
+            </div>
+            <div class="icon-item">
+              <img src="https://ext.same-assets.com/2496973885/3838976438.webp" alt="Healthy Aging" class="icon-img">
+              <span>Healthy Aging</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conditions Section -->
+      <section class="conditions">
+        <div class="container">
+          <div class="section-header">
+            <h2>CONDITIONS</h2>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="conditions-grid">
+            <a href="#" class="condition-link">Allergies</a>
+            <a href="#" class="condition-link">Alzheimer's</a>
+            <a href="#" class="condition-link">Anxiety Disorders</a>
+            <a href="#" class="condition-link">Arthritis</a>
+            <a href="#" class="condition-link">Asthma</a>
+            <a href="#" class="condition-link">Cancer</a>
+            <a href="#" class="condition-link">Cholesterol</a>
+            <a href="#" class="condition-link">Chronic Pain</a>
+            <a href="#" class="condition-link">Cold & Flu</a>
+            <a href="#" class="condition-link">Depression</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Health News Section -->
+      <section class="health-news">
+        <div class="container">
+          <div class="section-header">
+            <h2>HEALTH NEWS</h2>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="news-main">
+            <div class="news-image">
+              <img src="https://ext.same-assets.com/2496973885/156849926.webp" alt="Doctor with patient" class="news-img">
+            </div>
+            <div class="news-text">
+              <h2>Parkinson's Disease May Soon Outpace Dementia</h2>
+              <p>The number of people with Parkinson's disease is on the rise and may surpass the number of people with Alzheimer's disease.</p>
+            </div>
+          </div>
+          <div class="news-secondary">
+            <div class="news-item">
+              <h3>New 'Heart Patch' Could Help Save Lives After Congestive Heart Damage</h3>
+            </div>
+            <div class="news-item">
+              <h3>FDA Common Migraine Nasal Spray is Really Effective for $50</h3>
+            </div>
+            <div class="news-item">
+              <h3>The Case For Limiting Trans on All Your Supplements</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Articles Section -->
+      <section class="feature-articles">
+        <div class="container">
+          <article class="main-feature">
+            <div class="article-image">
+              <img src="https://ext.same-assets.com/2496973885/171447662.webp" alt="Person with phone">
+            </div>
+            <div class="article-content">
+              <span class="author">Kim Mills, MS</span>
+              <h2>What's Behind The Shortage Of Primary Care Doctors?</h2>
+              <button class="read-more">Read More</button>
+            </div>
+          </article>
+
+          <div class="side-features">
+            <article class="side-feature">
+              <div class="side-image">
+                <img src="https://ext.same-assets.com/4097139332/2717461809.webp" alt="Doctor with patient">
+              </div>
+              <div class="side-content">
+                <h3>DNA Diet: DNA Test for Weight Loss Success</h3>
+              </div>
+            </article>
+            <article class="side-feature">
+              <div class="side-image">
+                <img src="https://ext.same-assets.com/4097139332/1923172545.webp" alt="Medical professional on phone">
+              </div>
+              <div class="side-content">
+                <h3>Transforming Patient Experiences with Technology</h3>
+              </div>
+            </article>
+            <article class="side-feature">
+              <div class="side-image">
+                <img src="https://ext.same-assets.com/4097139332/86500969.webp" alt="Doctor with senior patient">
+              </div>
+              <div class="side-content">
+                <h3>Surgeon Diversity Is Key During Brain Surgery</h3>
+              </div>
+            </article>
+            <article class="side-feature">
+              <div class="side-image">
+                <img src="https://ext.same-assets.com/2496973885/86500969.webp" alt="Doctor with patient">
+              </div>
+              <div class="side-content">
+                <h3>Understanding Sudden Temporary Paralysis</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Special Section -->
+      <section class="special-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>SPECIAL SECTION</h2>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="special-articles">
+            <article class="special-article">
+              <div class="special-image">
+                <img src="https://ext.same-assets.com/2496973885/2145012863.webp" alt="Person sleeping" class="special-img">
+              </div>
+              <div class="special-content">
+                <h3>Treating Poor Sleep Apnea</h3>
+                <p>Poor sleep can lead to health problems.</p>
+              </div>
+            </article>
+            <article class="special-article">
+              <div class="special-image">
+                <img src="https://ext.same-assets.com/2496973885/156849926.webp" alt="Person in wheelchair" class="special-img">
+              </div>
+              <div class="special-content">
+                <h3>A New Way To Look At Mobility</h3>
+                <p>Modern solutions for mobility challenges.</p>
+              </div>
+            </article>
+            <article class="special-article">
+              <div class="special-image">
+                <img src="https://ext.same-assets.com/2496973885/2240518234.webp" alt="Person with doctor" class="special-img">
+              </div>
+              <div class="special-content">
+                <h3>Breaking Barriers to Achieve Care</h3>
+                <p>Access to healthcare means better outcomes.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Free WebMD Newsletters</h2>
+            <p>Everything you need to know about your health, right in your inbox.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email address" required>
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+          <div class="newsletter-image">
+            <img src="/src/assets/newsletter.svg" alt="Newsletter">
+          </div>
+        </div>
+      </section>
+
+      <!-- Health Tools -->
+      <section class="health-tools">
+        <div class="container">
+          <div class="section-header">
+            <h2>TOOLS, TRACKERS & CALCULATORS</h2>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="tools-icons">
+            <div class="tool-item">
+              <img src="/src/assets/calculator.svg" alt="BMI Calculator" class="tool-icon">
+              <span>BMI Calculator</span>
+            </div>
+            <div class="tool-item">
+              <img src="/src/assets/calculator.svg" alt="Ovulation Calculator" class="tool-icon">
+              <span>Ovulation Calculator</span>
+            </div>
+            <div class="tool-item">
+              <img src="/src/assets/map.svg" alt="Find a Doctor" class="tool-icon">
+              <span>Find a Doctor</span>
+            </div>
+            <div class="tool-item">
+              <img src="/src/assets/pill.svg" alt="Pill Identifier" class="tool-icon">
+              <span>Pill Identifier</span>
+            </div>
+            <div class="tool-item">
+              <img src="/src/assets/drugs.svg" alt="Drugs Interaction Checker" class="tool-icon">
+              <span>Drugs Interaction Checker</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3>INDEX A-Z</h3>
+              <div class="footer-links">
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+                <a href="#">E</a>
+                <a href="#">F</a>
+                <a href="#">G</a>
+                <a href="#">H</a>
+                <a href="#">I</a>
+                <a href="#">J</a>
+                <a href="#">K</a>
+                <a href="#">L</a>
+                <a href="#">M</a>
+                <a href="#">N</a>
+                <a href="#">O</a>
+                <a href="#">P</a>
+                <a href="#">Q</a>
+                <a href="#">R</a>
+                <a href="#">S</a>
+                <a href="#">T</a>
+                <a href="#">U</a>
+                <a href="#">V</a>
+                <a href="#">W</a>
+                <a href="#">X</a>
+                <a href="#">Y</a>
+                <a href="#">Z</a>
+                <a href="#">0-9</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="disclaimer">
+            <h3>Our Content Is Different Because We Set the Bar Higher</h3>
+            <p>As a leader in digital health publishing and the most recognized health brand in the US, WebMD strives to maintain the most comprehensive and reliable source of health and medical information on the internet.</p>
+            <div class="key-points">
+              <div class="point">
+                <span class="point-number">01</span>
+                <p>Creating our content involves the medical community to ensure scientific accuracy and balance.</p>
+              </div>
+              <div class="point">
+                <span class="point-number">02</span>
+                <p>Providing medical perspectives with our stories to help you understand the facts.</p>
+              </div>
+              <div class="point">
+                <span class="point-number">03</span>
+                <p>Regularly reviewing and updating our content to deliver the most current guidance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-links">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">Pinterest</a>
+            <a href="#" class="social-icon">YouTube</a>
+          </div>
+          <div class="app-links">
+            <a href="#" class="app-link">Get Our App</a>
+          </div>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Advertise with Us</a>
+            <a href="#">Accessibility</a>
+            <a href="#">About</a>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2025 WebMD LLC. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
